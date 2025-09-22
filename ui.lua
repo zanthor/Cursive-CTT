@@ -290,7 +290,8 @@ ui.BarClick = function()
 	end
 end
 
-local function CreateBarFirstSection(unitFrame, guid)
+--Expose function to allow CTT to track targets not focus'd on a tank.
+function CreateBarFirstSection(unitFrame, guid)
 	local config = Cursive.db.profile
 	local firstSection = CreateFrame("Frame", "Cursive1stSection", unitFrame)
 
